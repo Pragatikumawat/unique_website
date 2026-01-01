@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pragatikumawat.github.io/unique_website/",
+"homepage": "https://pragatikumawat.github.io/unique_website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
