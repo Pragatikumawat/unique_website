@@ -1,7 +1,7 @@
 // src/sections/Hero.jsx
 import React from 'react';
 import { Link } from 'react-scroll'; // For smooth scrolling CTA buttons
-
+import profilePic from '../assets/MyProfilePicture.jpeg'; // Make sure to add your profile picture in this path
 const Hero = () => {
     // Replace these variables with your actual information
     const name = "Pragati kumawat";
@@ -48,7 +48,7 @@ const Hero = () => {
                     {/* Add your professional photo here. Place the image 
                     file inside src/assets/ */}
                     <img 
-                        src="src/assets/MyProfilePicture.jpeg" // CHANGE THIS PATH
+                        src={profilePic} // CHANGE THIS PATH
                         alt={`Portrait of ${name}`} 
                         className="profile-avatar"
                     />
