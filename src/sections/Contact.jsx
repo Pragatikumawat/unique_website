@@ -8,7 +8,7 @@ const Contact = () => {
 
     
     // IMPORTANT: Replace this with your DEPLOYED Node.js backend URL
-    const API_ENDPOINT = 'https://attractive-portfolio-backend.onrender.com'; 
+    const API_ENDPOINT = 'https://attractive-portfolio-backend.onrender.com/api/contact'; 
     // Remember to update this to your Render/Railway URL when deploying!
 
     const handleChange = (e) => {

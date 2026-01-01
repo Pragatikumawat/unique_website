@@ -2,6 +2,7 @@
 import React from 'react';
 // If you install react-icons (npm install react-icons), you can use them here:
 // import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import background from '../assets/background.jpg';
 
 const featuredProjects = [
     { 
@@ -9,7 +10,7 @@ const featuredProjects = [
         title: "Pawsome Pet-Booking application", 
         description: "A full-stack MERN application with secure user authentication, product management, and integrated Stripe payments.", 
         tech: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-        image: "background.jpg", // Place images in /public/assets/
+        image: background, // Place images in /public/assets/
         liveLink: "https://live.example.com/ecommerce",
         repoLink: "https://github.com/yourname/ecommerce-repo"
     },
@@ -18,7 +19,7 @@ const featuredProjects = [
         title: "Stay-In-Your-Lane Dating Application", 
         description: "Built with WebSockets, offering instant messaging, online status tracking, and scalable performance.", 
         tech: ["React", "Socket.io", "Node.js", "Redis"],
-        image: "background.jpg", 
+        image: background, 
         liveLink: "https://live.example.com/chat-app",
         repoLink: "https://github.com/yourname/chat-app-repo"
     },
@@ -27,7 +28,7 @@ const featuredProjects = [
         title: "Community-Saving-Fund Banking web app", 
         description: "Frontend application utilizing OpenAI's API to generate recipes based on available ingredients and dietary restrictions.", 
         tech: ["React", "Vite", "OpenAI API", "Tailwind CSS"],
-        image: "background.jpg", 
+        image: background, 
         liveLink: "https://live.example.com/ai-recipes",
         repoLink: "https://github.com/yourname/recipe-generator"
     },
@@ -49,7 +50,7 @@ const Portfolio = () => {
                             {/* NOTE: Ensure you create a folder named 'assets' inside your 'public' folder 
                                 and place your images there for the path '/assets/...' to work. */}
                             <img 
-                                src={`public/${project.image}`} 
+                                src={`${project.image}`} 
                                 alt={`Screenshot of ${project.title}`} 
                                 className="project-image"
                             />
