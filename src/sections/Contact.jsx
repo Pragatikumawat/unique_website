@@ -8,8 +8,7 @@ const Contact = () => {
 
     
     // IMPORTANT: Replace this with your DEPLOYED Node.js backend URL
-    const API_ENDPOINT = 'https://attractive-portfolio-backend.onrender.com/api/contact'; 
-    // Remember to update this to your Render/Railway URL when deploying!
+const apiURL = 'https://attractive-portfolio-api.onrender.com/api/contact'; // <-- Replace with your ACTUAL Render URL    // Remember to update this to your Render/Railway URL when deploying!
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,7 +19,7 @@ const Contact = () => {
         setStatus('Sending...');
 
         try {
-            await axios.post(API_ENDPOINT, formData);
+            await axios.post(apiURL, formData);
             
             setStatus('✅ Message sent successfully! I will be in touch soon.');
             setTimeout(() => setStatus(''), 5000); // Clear success message after 5 seconds
