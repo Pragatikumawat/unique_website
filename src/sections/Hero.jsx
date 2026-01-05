@@ -34,7 +34,7 @@ const Hero = () => {
                         </Link>
                         
                         {/* CTA 2: Link to download the resume */}
-                       <iframe>
+                       
                         <a 
                             href={resumeLink} 
                             target="_blank" 
@@ -42,7 +42,7 @@ const Hero = () => {
                             className="btn secondary-btn"
                         >
                             View Resume
-                        </a></iframe>
+                        </a>
                     </div>
                 </div>
                 
