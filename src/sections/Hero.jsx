@@ -1,7 +1,8 @@
 // src/sections/Hero.jsx
 import React from 'react';
 import { Link } from 'react-scroll'; // For smooth scrolling CTA buttons
-import profilePic from '../assets/MyProfilePicture.jpeg'; // Make sure to add your profile picture in this path
+import profilePic from '../assets/MyProfilePicture.jpeg'; 
+// Make sure to add your profile picture in this path
 const Hero = () => {
     // Replace these variables with your actual information
     const name = "Pragati kumawat";
@@ -33,6 +34,7 @@ const Hero = () => {
                         </Link>
                         
                         {/* CTA 2: Link to download the resume */}
+                       <iframe>
                         <a 
                             href={resumeLink} 
                             target="_blank" 
@@ -40,7 +42,7 @@ const Hero = () => {
                             className="btn secondary-btn"
                         >
                             View Resume
-                        </a>
+                        </a></iframe>
                     </div>
                 </div>
                 
