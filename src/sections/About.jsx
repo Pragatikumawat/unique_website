@@ -39,7 +39,7 @@ My hardest project was checking the security of a new online payment system that
                     
                     
                     <a 
-                        href="src/assets/Pragati_kumawat_resume.pdf" 
+                        href="./Pragati_kumawat_resume.pdf" 
                         // Ensure this path is correct
                         download 
                         className="btn secondary-btn"
