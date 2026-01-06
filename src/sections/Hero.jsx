@@ -8,7 +8,7 @@ const Hero = () => {
     const name = "Pragati kumawat";
     const title = "Full-Stack Developer (React & Node.js)";
     const tagline = "Building robust web applications and seamless digital experiences.";
-    const resumeLink = "src/assets/Pragati_kumawat_resume.pdf"; // Replace with the 
+    const resumeLink = "/Pragati_kumawat_resume.pdf"; // Replace with the 
     // actual path to your resume file
 
     return (
@@ -41,11 +41,11 @@ const Hero = () => {
                             rel="noopener noreferrer" 
                             className="btn secondary-btn"
                         >
+                            
                             View Resume
                         </a>
                     </div>
                 </div>
-                
                 <div className="hero-image-container">
                     {/* Add your professional photo here. Place the image 
                     file inside src/assets/ */}
