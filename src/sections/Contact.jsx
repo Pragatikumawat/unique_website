@@ -19,8 +19,7 @@ const apiURL = 'https://attractive-portfolio-api.onrender.com/api/contact'; // <
         setStatus('Sending...');
 
         try {
-            await axios.post(apiURL, formData);
-            
+            await axios.post(apiURL, formData, { withCredentials: true });
             setStatus('✅ Message sent successfully! I will be in touch soon.');
             setTimeout(() => setStatus(''), 5000); // Clear success message after 5 seconds
             setFormData({ name: '', email: '', message: '' }); // Clear form
